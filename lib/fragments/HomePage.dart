@@ -36,6 +36,21 @@ class HomePage extends StatelessWidget {
                 " +1 ",
                 style: TextStyle(fontSize: 14.0),
               ),
+            ),
+            FlatButton(
+              color: Colors.red,
+              textColor: Colors.white,
+              disabledColor: Colors.grey,
+              disabledTextColor: Colors.black,
+              padding: EdgeInsets.all(8.0),
+              splashColor: Colors.redAccent,
+              onPressed: () {
+                contador.restar();
+              },
+              child: Text(
+                " +1 ",
+                style: TextStyle(fontSize: 14.0),
+              ),
             )
           ],
         ),

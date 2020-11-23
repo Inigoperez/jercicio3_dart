@@ -11,4 +11,9 @@ class Contador with ChangeNotifier {
     _contador++;
     notifyListeners();
   }
+
+  restar() {
+    _contador--;
+    notifyListeners();
+  }
 }
