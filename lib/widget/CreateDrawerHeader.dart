@@ -22,7 +22,7 @@ Widget createDrawerHeader() {
         Positioned(
             bottom: 12.0,
             left: 16.0,
-            child: Text("Welcome to Flutter",
+            child: Text("Iñigo Perez",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,

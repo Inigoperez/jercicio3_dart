@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
     final contador = Provider.of<Contador>(context);
     return new Scaffold(
       appBar: AppBar(
-        title: Text("My Profile"),
+        title: Text("Resultado Contador"),
       ),
       drawer: NavigationDrawer(),
       body: Center(

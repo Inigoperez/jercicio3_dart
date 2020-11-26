@@ -14,13 +14,13 @@ class NavigationDrawer extends StatelessWidget {
           createDrawerHeader(),
           createDrawerBodyItem(
             icon: Icons.home,
-            text: 'Home',
+            text: 'Contador',
             onTap: () =>
                 Navigator.pushReplacementNamed(context, PageRoutes.home),
           ),
           createDrawerBodyItem(
             icon: Icons.account_circle,
-            text: 'Profile',
+            text: 'Resultado Contador',
             onTap: () =>
                 Navigator.pushReplacementNamed(context, PageRoutes.profile),
           ),

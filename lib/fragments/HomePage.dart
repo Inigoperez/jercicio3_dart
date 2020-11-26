@@ -12,16 +12,12 @@ class HomePage extends StatelessWidget {
     final contador = Provider.of<Contador>(context);
     return new Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("Contador"),
       ),
       drawer: NavigationDrawer(),
       body: Center(
         child: Column(
           children: [
-            Text(
-              contador.contador.toString(),
-              style: TextStyle(fontSize: 25.0),
-            ),
             FlatButton(
               color: Colors.blue,
               textColor: Colors.white,
@@ -37,6 +33,10 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 14.0),
               ),
             ),
+            Text(
+              contador.contador.toString(),
+              style: TextStyle(fontSize: 25.0),
+            ),
             FlatButton(
               color: Colors.red,
               textColor: Colors.white,
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                 contador.restar();
               },
               child: Text(
-                " +1 ",
+                " -1 ",
                 style: TextStyle(fontSize: 14.0),
               ),
             )
